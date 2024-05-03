@@ -22,8 +22,7 @@ def ipaddress(path=None):
     except Exception as err:
         print(f"Error getting ipaddress : {err}")
         return "Error"
-    
-<<<<<<< HEAD
+
 def make_db():
     con = sqlite3.connect("database.db")
     cur = con.cursor()
@@ -35,7 +34,5 @@ def make_db():
     con.commit()
     con.close()
 
-make_db()    
-=======
->>>>>>> 2ed82424e8759f0cd39e6612bcb359a7bfcbcf90
+make_db()
 app.run(host="0.0.0.0", port="3124", use_reloader=True)
